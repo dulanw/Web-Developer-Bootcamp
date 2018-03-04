@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <form>
+            <div>
+            <!-- Name Fields -->
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+            </div>
+
+            <div>
+            <!-- Gender Selection -->
+            <label for="male">Male</label>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="female">Female</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="other">Other</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            </div>
+
+            <div>
+            <!-- Email and Password -->
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" minlength="5" maxlength="10" required>
+            </div>
+
+            <br>
+            <!-- Date of birth -->
+            <div>
+            <label for="dobday">Birthday</label>
+            <select id="dobday" name="dobday" placeholder="Day">
+                <option>Day</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            <select id="dobmonth" name="dobmonth" placeholder="Month">
+                <option>Month</option>
+                <option value="1">January</option>
+                <option value="2">Februray</option>
+                <option value="3">March</option>
+            </select>
+            <select id="dobyear" name="dobyear" placeholder="Year">
+                <option>Year</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+            </div>
+            <div>
+            <!-- terms and conditions -->
+            <br>
+            <label for="terms">I agree to the terms and conditions</label>
+            <input type="checkbox" name="terms" value="true" required>
+            </div>
+            <input type="submit">
+
+        </form>
+    </body>
+</html>
